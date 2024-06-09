@@ -1181,7 +1181,7 @@ img {
 }
 .digitproduct-related-articles-content{
 	text-align: left;
-	margin-top: 80px;
+	padding: 80px 0 120px 0;
 }
 .digitproduct-related-articles-content > h4{
 	font-size: 28px;
