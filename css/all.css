@@ -1561,7 +1561,7 @@ img {
 	.display-flex {
 		flex-direction: column;
 	}
-	
+
 	.main h3{
 		width: 300px;
 	}
@@ -2078,7 +2078,14 @@ img {
 	}
 	/* digitprodcts-Page End */
 }
-
+@media(max-width:420px){
+	.banner-about-underline-1::after{
+		display: none;
+	}
+	.banner-about-underline-2::after{
+		display: none;
+	}
+}
 @media(max-width:375px) {
 
 	/* ---header-mobile START--- */
@@ -2128,11 +2135,14 @@ img {
 	.banner-about-underline-1::after {
 		width: 117px;
 		height: 6px;
+		display: block;
 	}
 
 	.banner-about-underline-2::after {
 		width: 95px;
 		height: 5px;
+		display: block;
+		top: 12px;
 	}
 
 	.banner-ul {
