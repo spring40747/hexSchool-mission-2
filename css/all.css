@@ -407,7 +407,7 @@ img {
 	content: "";
 	display: block;
 	width: 50%;
-	/* height: 800px; */
+	height: 100%;
 	padding: 400px 0px 400px 0px;
 	background-color: #0A101380;
 	position: absolute;
@@ -440,7 +440,7 @@ img {
 	background-image: url(../img/homepage-services-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 120px 312px;
+	padding: 120px 0px;
 }
 
 .main-piece-4-service-ul {
@@ -714,12 +714,13 @@ img {
 .portfolio-list-ul {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	/* align-items: center; */
 	flex-wrap: wrap;
 	text-align: left;
 }
 
 .portfolio-list-ul>li {
+	width: 49%;
 	margin-bottom: 80px;
 }
 
@@ -991,6 +992,8 @@ img {
 	width: 48.885%;
 	padding: 24px 24px 12px 24px;
 	margin-bottom: 24px;
+	border: 1px solid #E9E9E9;
+	border-radius: 8px;
 }
 
 .Service-common-problem-ul li>h4 {
@@ -1812,6 +1815,7 @@ img {
 	.portfolio-list-ul {
 		flex-direction: column;
 		font-size: 16px;
+		align-items: center;
 	}
 
 	.portfolio-list-ul>li {
@@ -2007,9 +2011,9 @@ img {
 		display: flex;
 		align-items: center;
 		overflow-x: scroll;
-		&::-webkit-scrollbar {
+		/* &::-webkit-scrollbar {
 			display:none;
-		  }
+		  } */
 	}
 
 	.blog-content-rightSide-ul-link li {
@@ -2077,6 +2081,14 @@ img {
 		margin-bottom: 40px;
 	}
 	/* digitprodcts-Page End */
+}
+@media(max-width:767px){
+	.Service-process-table-ul{
+		padding: 12px;
+	}
+	.Service-process-table-ul-li {
+		width: 100%;
+	}
 }
 @media(max-width:420px){
 	.banner-about-underline-1::after{
@@ -2257,7 +2269,6 @@ img {
 	.portfolio-banner-exp-ul {
 		width: 80%;
 	}
-
 	.portfolio-list-ul>li {
 		width: 100%;
 		margin-bottom: 48px;
@@ -2344,7 +2355,12 @@ img {
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 	}
-
+	.blog-content-rightSide-ul-link{
+		overflow-x: scroll;
+			/* &::-webkit-scrollbar {
+			display:none;
+		  } */
+	}
 	.blog-content-rightSide-ul-link li {
 		margin-right: 32px;
 		align-items: center
